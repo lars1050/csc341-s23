@@ -181,17 +181,16 @@ public class TestFaceList {
 		Assert.assertEquals(f1,faces.get(0),"add at 0 (value)");
 		Assert.assertEquals(f0,faces.get(1),"add at 0 (2nd song)");
 
-		faces.add(2,f2);	// order is now f1, f0, f2
-		Assert.assertEquals(3,faces.length(),"add at end (length)");
-		Assert.assertEquals(f2,faces.get(2),"add at end (value)");
+		faces.add(2,f2);	// nothing is added
+		Assert.assertEquals(2,faces.length(),"invalid add at end (length)");
 		Assert.assertEquals(f1,faces.get(0),"add at end (1st)");
 		Assert.assertEquals(f0,faces.get(1),"add at end (2nd)");
 
 		// test invalid indices
 		faces.add(-1,f4);
-		Assert.assertEquals(4,faces.length(),"add at -1 (length)");
+		Assert.assertEquals(2,faces.length(),"add at -1 (length)");
 		faces.add(5,f4);
-		Assert.assertEquals(4,faces.length(),"add beyond last (length)");
+		Assert.assertEquals(2,faces.length(),"add beyond last (length)");
 	}
 
 	/* __________________________________________________________________ */
