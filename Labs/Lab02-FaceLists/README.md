@@ -65,13 +65,13 @@ It is important to have a shared understanding of the list qualities and how the
 
 Implement the following ...
 
-6. `Boolean isFull()` determines whether or not there is capacity for more faces.
-7. `Boolean isEmpty()` determines whether or not there are any faces in the List.
-8. `Boolean isValid(int index)` determines if the given index corresponds to an element stored in the List.
+6. `Boolean full()` determines whether or not there is capacity for more faces.
+7. `Boolean empty()` determines whether or not there are any faces in the List.
+8. `Boolean valid(int index)` determines if the given index corresponds to an element stored in the List.
 
-#### PEEK Method
+#### GET Method
 
-9. Implement the `peek(int index)` method.
+9. Implement the `get(int index)` method.
     - If the index is valid, return the element at that index. It should not be removed, just returned.
     - If the index is not valid, <del>print an error message and</del> return null.
 
@@ -91,32 +91,22 @@ Implement the following ...
 
 > Note that ignoring the request without providing feedback to the user is not good practice. Typically, we would throw an exception, but we might work on that later in the semester.
 
-12. Write a test for `add(int index, Face face)` in which you are adding somewhere in the middle of the List. _Look for the TODO._
-
-13. Write tests that test `add( int index, Face face)` when the index is beyond the last element (but not the capacity),
-and one that is beyond the capacity. _Look for the TODO._
-
 <hr>
 
 
-#### FIND Method
+#### LOCATE Methods
 
-15. Implement the `recordNo(Face face)` method.
+15. Implement the `locate(Face face)` method.
     - If the face is in the list, return its index.
     - If the face is not in the list, return -1 (no error message required).
 
 <hr>
 
-#### CONVERT Method
+#### CONVERT Methods
 
 16. Implement `Face[] toArray()`. It creates an array of the size of the number of elements stored. All elements are copied into the 
 array in the order they appear in the List.
 
-#### TESTS for Remove Methods
-
-17. Write at least 2 tests for `remove(Integer index)`. One test should test to remove at a valid index and the other should test to remove at an invalid index.
-
-18. Write at least 2 tests for `remove(Face face)`. One test should search for a face that is in the list and one for a face that is not in the list.
 
 
 #### QUESTIONS
