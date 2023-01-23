@@ -61,7 +61,7 @@ It is important to have a shared understanding of the list qualities and how the
   ```
   You can view the results by opening the index.html file in your browser.
 
-#### MISCELANEOUS
+#### MISCELLANEOUS
 
 Implement the following ...
 
