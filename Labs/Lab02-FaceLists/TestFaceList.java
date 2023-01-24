@@ -172,7 +172,7 @@ public class TestFaceList {
 
 		// attempt to add at 0 in empty array
 		faces.add(0,f0);
-		Assert.assertEquals(0,faces.length(),"attempt add to empty (length)");
+		Assert.assertEquals(0,faces.length(),"attempt add to empty - invalid index (length)");
 
 		// add 2 of 6
 		faces.add(f0);
