@@ -118,4 +118,4 @@ In other words, where in the array is it most efficient to add and where in the 
 
 * Write the algorithm using pseudocode to demonstrate the logic. You can use Java if you like, but I am only interested in the logic, not the syntax.
 
-3. Describe when the algorithm you wrote in #2 can be much less efficient than the add method discussed in #1. CLUE: Consider an array with these values: {null,null,null,null,null,2,3}
+3. Consider a REMOVE algorithm that specifies the index of the element to be removed applied to the scenario described in #2. State why this remove method can be much less efficient than the remove method for when elments must be shifted. CLUE: Consider an array with these values: {null,null,null,null,null,2,3}
