@@ -271,7 +271,7 @@ public class TestLab3 extends UnitTest {
 		// remove only (f2)
 		removed = faces.remove(0);
 		assertEq(0,faces.length(),"remove only (length)");
-		assertEq(f0,removed,"remove only (value)");
+		assertEq(f2,removed,"remove only (value)");
 	
 
 
@@ -302,7 +302,7 @@ public class TestLab3 extends UnitTest {
 		// remove first (f0) == {f2}
 		isRemoved = faces.remove(f0);
 		assertEq(1,faces.length(),"remove first face (length)");
-		assertEq(f0,removed,"remove first face (value)");
+		assertEq(true,isRemoved,"remove first face (value)");
 
 		// remove only (f2)
 		isRemoved = faces.remove(f2);
