@@ -202,7 +202,7 @@ public class TestLab3 extends UnitTest {
 		System.out.println("--------------addAll()");
 		faces = new FaceList(8);
 
-		Faces[] toAdd = {f0,f1,f2};
+		Face[] toAdd = {f0,f1,f2};
 		int total;
 
 		total = faces.addAll(toAdd);
@@ -295,7 +295,7 @@ public class TestLab3 extends UnitTest {
 		assertEq(true,isRemoved,"remove middle face (value)");
 		
 		// remove last (f3) == {f0,f2}
-		removed = faces.remove(f3);
+		isRemoved = faces.remove(f3);
 		assertEq(2,faces.length(),"remove last face (length)");
 		assertEq(true,isRemoved,"remove last face (value)");
 
