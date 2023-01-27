@@ -209,17 +209,17 @@ public class TestLab3 extends UnitTest {
 		assertEq(3,faces.length(),"addAll to empty");
 		assertEq(3,total,"addAll added to empty");
 
-		faces.addAll(toAdd);
+		total = faces.addAll(toAdd);
 		assertEq(6,faces.length(),"addAll 3 to 3");
 		assertEq(3,total,"addAll added 3 of 3");
 
 		// cannot add them all
-		faces.addAll(toAdd);
+		total = faces.addAll(toAdd);
 		assertEq(8,faces.length(),"addAll 3 to 6");
 		assertEq(2,total,"addAll added 2 of 3");
 
 		// cannot add any
-		faces.addAll(toAdd);
+		total = faces.addAll(toAdd);
 		assertEq(8,faces.length(),"addAll 3 to 8");
 		assertEq(0,total,"addAll added 0 of 3");
 		
