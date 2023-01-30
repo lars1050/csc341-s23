@@ -202,24 +202,24 @@ public class TestLab3 extends UnitTest {
 		System.out.println("--------------addAll()");
 		faces = new FaceList(8);
 
-		Faces[] toAdd = {f0,f1,f2};
+		Face[] toAdd = {f0,f1,f2};
 		int total;
 
 		total = faces.addAll(toAdd);
 		assertEq(3,faces.length(),"addAll to empty");
 		assertEq(3,total,"addAll added to empty");
 
-		faces.addAll(toAdd);
+		total = faces.addAll(toAdd);
 		assertEq(6,faces.length(),"addAll 3 to 3");
 		assertEq(3,total,"addAll added 3 of 3");
 
 		// cannot add them all
-		faces.addAll(toAdd);
+		total = faces.addAll(toAdd);
 		assertEq(8,faces.length(),"addAll 3 to 6");
 		assertEq(2,total,"addAll added 2 of 3");
 
 		// cannot add any
-		faces.addAll(toAdd);
+		total = faces.addAll(toAdd);
 		assertEq(8,faces.length(),"addAll 3 to 8");
 		assertEq(0,total,"addAll added 0 of 3");
 		
@@ -271,7 +271,7 @@ public class TestLab3 extends UnitTest {
 		// remove only (f2)
 		removed = faces.remove(0);
 		assertEq(0,faces.length(),"remove only (length)");
-		assertEq(f0,removed,"remove only (value)");
+		assertEq(f2,removed,"remove only (value)");
 	
 
 
@@ -295,14 +295,14 @@ public class TestLab3 extends UnitTest {
 		assertEq(true,isRemoved,"remove middle face (value)");
 		
 		// remove last (f3) == {f0,f2}
-		removed = faces.remove(f3);
+		isRemoved = faces.remove(f3);
 		assertEq(2,faces.length(),"remove last face (length)");
 		assertEq(true,isRemoved,"remove last face (value)");
 
 		// remove first (f0) == {f2}
 		isRemoved = faces.remove(f0);
 		assertEq(1,faces.length(),"remove first face (length)");
-		assertEq(f0,removed,"remove first face (value)");
+		assertEq(true,isRemoved,"remove first face (value)");
 
 		// remove only (f2)
 		isRemoved = faces.remove(f2);
