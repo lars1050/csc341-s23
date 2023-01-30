@@ -397,19 +397,19 @@ public class TestLab3 extends UnitTest {
 		faces.add(f3);
 
 		result = faces.sublist(0,3);
-		assertEq(8,result.length(),"copy all 4 (length)");
+		assertEq(8,result.capacity(),"copy all 4 (length)");
 		assertEq(f0,result.get(0),"copy all 4 (value)");
 
 		result = faces.sublist(0,0);
-		assertEq(2,result.length(),"copy first (length)");
+		assertEq(2,result.capacity(),"copy first (length)");
 		assertEq(f0,result.get(0),"copy first (value)");
 
 		result = faces.sublist(3,3);
-		assertEq(2,result.length(),"copy last (length)");
-		assertEq(f3,result.get(3),"copy first (value)");
+		assertEq(2,result.capacity(),"copy last (length)");
+		assertEq(f3,result.get(0),"copy last (value)");
 
 		result = faces.sublist(1,2);
-		assertEq(4,result.length(),"copy middle (length)");
+		assertEq(4,result.capacity(),"copy middle (length)");
 		assertEq(f1,result.get(0),"copy middle (value)");
 
 	} // end testConvert
