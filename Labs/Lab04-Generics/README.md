@@ -12,6 +12,7 @@ This is an overview of the changes or new requirements:
 
 ##### New Methods
 
+- `List(List<T> toCopy)`
 - `increaseCapacity(int size)`
 - `removeEach(T item)`
 - `List(T[] toAdd)`
@@ -126,10 +127,10 @@ will need to be created and all elements copied over. **NEW METHOD**
 ##### Constructors
 
 - Change DEFAULT_CAPACITY to 20
-- `public List()` default constructor with `this(DEFAULT_CAPACITY)` in the body.
+- `public List()` default constructor <del>with `this(DEFAULT_CAPACITY)` in the body</del>.
 - <del>`public List(int size)` creates a new array with `size` capacity.</del>. **No longer relevant.**
 - `public List(T[] toAdd)` create a new T[] array that is size 2*toAdd.length or DEFAULT_CAPACITY, whichever is larger. **NEW CONSTRUCTOR**
-- `public List(List<T> toCopy)` creates a copy of the "this" object (sometimes referred to as a copy constructor). Copy all elements from `toCopy` into `this`. Be sure the count and capacity are also copied.
+- `public List(List<T> toCopy)` creates a copy of the "this" object (sometimes referred to as a copy constructor). Copy all elements from `toCopy` into `this`. Be sure the count and capacity are also copied. **NEW CONSTRUCTOR**
 
 ##### Find Methods
 
