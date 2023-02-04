@@ -47,6 +47,8 @@ One common style guide is Google's <a href="https://google.github.io/styleguide/
 - constants, including enum values, are all capital
 - curly brace opening is on the same line as start of the block 
 - curly brace closing is on its own line or part of the else
+- keep spacing clean - no extra blank lines unless better for readability
+- clean "trash" from code (e.g. "TODO" when done, old debugging statements, etc.)
 - place error checking code at the top of the method and return immediately without using an else. 
 - use `@Override` whenever overriding a method.
 
