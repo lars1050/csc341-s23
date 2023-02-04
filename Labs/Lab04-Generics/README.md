@@ -51,6 +51,8 @@ One common style guide is Google's <a href="https://google.github.io/styleguide/
 - clean "trash" from code (e.g. "TODO" when done, old debugging statements, etc.)
 - place error checking code at the top of the method and return immediately without using an else. 
 - use `@Override` whenever overriding a method.
+- "new methods are not just habitually added to the end of the class" - group methods in some logical ordering
+- "never split overloads", including constructors. Methods that share the same name appear in a single contiguous group 
 
 ```Java
     // Example of correct placement of curly braces
