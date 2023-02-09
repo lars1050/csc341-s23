@@ -167,7 +167,7 @@ if the index is not valid. This will overwrite the element.
 
 - `int toArray(T[] array)` copies as many elements in the "this" array that will fit into the passed array. Returns the number of elements added to `array`.
 
-- `List<T> sublist(List<T> toCopy)` creates a new Sublist that contains a range of elements from the toCopy List.
+- `List<T> sublist(List<T> toCopy, int start, int end)` creates a new Sublist that contains a range of elements from the toCopy List.
 
 ##### Ordering Methods
 
