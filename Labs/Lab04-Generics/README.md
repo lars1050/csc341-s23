@@ -94,6 +94,7 @@ When a new class is defined, the relational operators (e.g. ==, <, >) will not w
 
 For testing purposes and for practice with implementing Comparable, define `class Simiple implements <Comparable<Simple>>` in the file `Simple.java`.
 - Simple has 2 member variables `Integer number` and `String alpha`.
+- Write a constructor that has 2 parameters that are the alpha and number.
 - Write the `@Override boolean equals(Object)`. It will be true if both the number and alpha are `equals()`.
 - `comparaTo()` should order Simple objects by their _alpha_ value, but if the alpha is the same, it should use the number as the tie-breaker. For example, `A1 < A2`.
 - `toString()` should print the number and alpha with no spaces, for example "A1".
