@@ -1,11 +1,11 @@
-/** A set of 3 integers */
-public class Trio<T extends Comparable<T>> {
-    T first;
-    T second;
-    T third;
+/** A set of 3 doubleegers */
+public class TrioDouble {
+    double first;
+    double second;
+    double third;
 
     /** Default constructor */
-    public Trio() {
+    public TrioDouble() {
     }
 
     /** Constructor assigning all 3 elements
@@ -13,16 +13,16 @@ public class Trio<T extends Comparable<T>> {
      * @param s second in the tuple
      * @param t third in the tuple
      */
-    public Trio(T f, T s, T t) {
+    public TrioDouble(double f, double s, double t) {
         first = f;
         second = s;
         third = t;
     }
 
     /** Copy constructor creating new tuple based on input parameter
-     * @param toCopy Trio values to copy into new Trio
+     * @param toCopy Trio values to copy doubleo new Trio
      */
-    public Trio(Trio<T> toCopy) {
+    public TrioDouble(TrioDouble toCopy) {
         first = toCopy.first;
         second = toCopy.second;
         third = toCopy.third;
@@ -35,8 +35,7 @@ public class Trio<T extends Comparable<T>> {
 
     /** Place the 3 elements in increasing order from first to third. */
     public void order() {
-         
-        T temp = second;
+        double temp = second;
         if (second<first) {
             second = first;
             first = temp;
@@ -50,26 +49,25 @@ public class Trio<T extends Comparable<T>> {
             third = second;
             second = temp;
         }
-        
     }
 
     //_______________________ SETTERS and GETTERS
-    public T first() {
+    public double first() {
         return first;
     }
-    public T second() {
+    public double second() {
         return second;
     }
-    public T third() {
+    public double third() {
         return third;
     }
-    public void first(T f) {
+    public void first(double f) {
         first = f;
     }
-    public void second(T s) {
+    public void second(double s) {
         second = s;
     }
-    public void third(T t) {
+    public void third(double t) {
         third = t;
     }
 }

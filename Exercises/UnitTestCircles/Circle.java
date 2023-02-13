@@ -33,5 +33,9 @@ public class Circle {
         // Overlaps when the radii of the 2 circles is less than the distance between
         return (distance < radius + other.radius);
     }
+
+    public double angleBetwee(Circle other) {
+        return 0.0;
+    }
     
 }
