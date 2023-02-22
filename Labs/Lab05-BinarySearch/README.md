@@ -1,6 +1,6 @@
 ### Lab 4 : Binary Search with Sorted List
 
-Due: Thursday, February 23 end-of-day
+**Due: Tuesday, February 28 end-of-day** (NEW DUE DATE)
 
 In this lab, you will modify your Lab 4 List class to one that maintains a sorted list and uses binary search. There are questions for this lab that you will find at the bottom of this document.
 
