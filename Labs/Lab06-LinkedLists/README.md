@@ -15,33 +15,32 @@ Answer the questions at the bottom of the requirements.
 
 It is your responsibility to test your code. The provided `Main` tests much of the code, but not all the special circumstances.
 
-<mark>**Special Constraints**:
+```
+Special Constraints 
+- You may not use for loops. Only while loops. 
+- You may not keep a count of the elements in the list.
+```
 
-  - You may not use for loops. Only while loops.
-
-  - You may not keep a count of the elements in the list.
-
-</mark>
-
+<hr>
 
 #### LIST IMPLEMENTATION
 
 Any method of a List should have the same behavior, regardless if implemented using an array or a linked list.
 
-##### Helper Functions
+**Helper Functions**
 
 - `public boolean empty()` determines whether or not there are any items in the List.
 
 - `@Override public String toString()` overrides Object method for printing.
 
-##### Constructors
+**Constructors**
 
 - `public List()` default constructor.
 
 - `public List(T[] toAdd)` create a new list and all the elements in the passed array to the List.
 
 
-##### Find Methods
+**Find Methods**
 
 > Use the `equals` method to check for equality.
 > Index 0 is the first element in the List.
@@ -51,21 +50,21 @@ Any method of a List should have the same behavior, regardless if implemented us
 - `public T get(int index)` returns array element at that index or null if index is not valid.
 
 
-##### Add and Set Methods
+**Add Methods**
 
 - `public void add(T item)` adds that item to the end.
 
 - `public void add(int index, T item)` adds that item at the stated index or ignores the request if the index is not valid. The index is valid if there is currently an element at that index.
 
 
-##### Remove Methods
+**Remove Methods**
 
 - `public boolean remove(T item)` Removes the first occurrence that is equal to item (use the `equals` method). Returns true if it was successfully removed, otherwise false.
 
 - `public T remove(int index)` Removes the element at that index (if the index is valid). Returns the element that was removed or null if nothing was removed.
 
 
-##### Conversion Methods
+**Conversion Methods**
 
 - `ArrayList<T> toArrayList()` returns a new ArrayList that contains the List elements. If the list is empty, return an EMPTY ArrayList.
 
@@ -80,10 +79,10 @@ Any method of a List should have the same behavior, regardless if implemented us
 
 #### Questions
 
-1. Why is `class Node` private to the List?
+1. Why is `class Node` private to the List rather than a public class?
 
 2. The ADT _FIFO Queue_ adds elements to the end of the list and removes elements from the front of the list. The ADT _LIFO Stack_ adds and removes elements from the end of the list.
 
-  a. Justify why a linked list is a better way to implement an FIFO Queue, rather than using an array. Consider all aspects including time and space efficiency and ease of implementation.
-
-  b. Justify why an array is a better way to implement an LIFO Stack, rather than using a linked list. Consider all aspects including time and space efficiency and ease of implementation.
+  - Justify why a linked list is a better way to implement an FIFO Queue, rather than using an array. Consider all potential advantages including time and space efficiency and ease of implementation.
+  
+  - Justify why an array is a better way to implement an LIFO Stack, rather than using a linked list. Consider all potential advantages including time and space efficiency and ease of implementation.
