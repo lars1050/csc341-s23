@@ -17,7 +17,7 @@ It is your responsibility to test your code. The provided `Main` tests much of t
 
 ```
 Special Constraints 
-- You may not use for loops. Only while loops. 
+- You may not use for loops. Only while loops. Except in the `List(T[] toAdd)` constructor.
 - You may not keep a count of the elements in the list.
 ```
 
