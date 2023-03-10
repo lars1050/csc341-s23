@@ -24,8 +24,9 @@ class List<T extends Comparable<T>> {
         ordering = c;
     }
 
-
-    public void toString() {
+    @Override
+    public String toString() {
+        return null;
 
     }
   
