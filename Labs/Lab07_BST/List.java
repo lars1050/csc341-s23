@@ -35,11 +35,11 @@ class List<T extends Comparable<T>> {
     }
     
     public T find(T value) {
-        return false;
+        return null;
     }
     
     public T find(T value, Comparator<T> comp) {
-        return false;
+        return null;
     }
     
     public T min() {
